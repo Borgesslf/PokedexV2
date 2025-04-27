@@ -1,0 +1,72 @@
+/* Ajustes responsivos para telas com largura máxima de 425px */
+@media screen and (max-width: 425px) {
+    /* Ajusta o container principal, reduzindo a largura e aplicando margens automáticas para centralização */
+    main {
+        width: 90%; /* A largura do container principal é ajustada para 90% */
+        margin: 10px auto; /* Define uma margem automática para centralizar o conteúdo */
+    }
+    
+    /* Ajusta a largura da imagem da Pokédex para 100% da tela */
+    .pokedex {
+        width: 100%; /* A imagem ocupa 100% da largura do container */
+    }
+    
+    /* Ajusta a altura e a posição da imagem do Pokémon */
+    .pokemon__image {
+        height: 18%; /* A altura da imagem do Pokémon é ajustada para 18% da altura do container */
+        bottom: 52%; /* A posição vertical é ajustada para 52% de distância do fundo */
+    }
+    
+    /* Ajusta o tamanho da fonte do nome e número do Pokémon, usando a função clamp para responsividade */
+    .pokemon__data {
+        font-size: clamp(8px, 4vw, 20px); /* A fonte vai variar entre 8px e 20px, dependendo da largura da tela */
+    }
+    
+    /* Ajusta a posição do formulário de pesquisa, movendo-o para 64% da altura da tela */
+    .form {
+        top: 64%; /* A posição do formulário é ajustada para 64% de distância do topo */
+    }
+    
+    /* Ajusta a posição e tamanho do contador de fraquezas */
+    .counters {
+        bottom: 16.5%; /* A posição do contador é ajustada para 16.5% de distância do fundo */
+        font-size: 0.75rem; /* O tamanho da fonte do contador é ajustado para 0.75rem */
+    }
+    
+    /* Ajusta a posição dos botões para 8% do fundo da tela */
+    .buttons {
+        bottom: 8%; /* A posição dos botões é ajustada para 8% do fundo */
+    }
+}
+
+/* Ajustes responsivos para telas com largura máxima de 100px */
+@media screen and (max-width: 100px) {
+    /* Ajusta o tamanho da fonte do nome e número do Pokémon para telas extremamente pequenas */
+    .pokemon__data {
+        font-size: clamp(8px, 3.5vw, 18px); /* A fonte vai variar entre 8px e 18px, dependendo da largura da tela */
+        right: 25%; /* A posição do nome e número é ajustada para 25% da largura da tela */
+    }
+    
+    /* Ajusta o tamanho da fonte dos botões e do campo de pesquisa para 0.8rem */
+    .button, .input__search {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte dos botões e campo de pesquisa */
+    }
+    
+    /* Ajusta o contador de fraquezas, definindo uma altura mínima de 35px e uma fonte menor */
+    .counters {
+        min-height: 35px; /* Define uma altura mínima para o contador */
+        font-size: 0.7rem; /* Reduz o tamanho da fonte para 0.7rem */
+    }
+    
+    /* Ajusta a altura e a posição da imagem do Pokémon para telas extremamente pequenas */
+    .pokemon__image {
+        transform: translate(-63%, 15%); /* A imagem é deslocada ligeiramente para melhor visualização */
+        height: 16%; /* A altura da imagem é ajustada para 16% */
+    }
+    
+    /* Ajusta a posição dos tipos do Pokémon */
+    .pokemon__type {
+        bottom: 49%; /* Ajusta a posição dos tipos para 49% de distância do fundo */
+        right: 12%; /* Ajusta a posição horizontal para 12% da largura da tela */
+    }
+}

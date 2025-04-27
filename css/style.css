@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap'); /* Importando a fonte 'Oxanium' */
+
+* { 
+    margin: 0; /* Remover margens de todos os elementos */
+    padding: 0; /* Remover preenchimento de todos os elementos */
+    box-sizing: border-box; /* Fazendo todos os elementos usarem a caixa de dimensionamento 'border-box' */
+    font-family: 'Oxanium', cursive; /* Definindo a fonte para todos os elementos */
+}
+
+body {
+    text-align: center; /* Centralizando o texto */
+    background: linear-gradient(to bottom, #6ab7f5, #fff); /* Gradiente de fundo */
+    min-height: 100vh; /* Garantindo que o corpo tenha a altura mínima de 100% da tela */
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centralizando na horizontal */
+    align-items: center; /* Centralizando na vertical */
+}
+
+main {
+    display: inline-block; /* Exibindo o 'main' como um bloco em linha */
+    position: relative; /* Permite posicionar os elementos filhos */
+    width: 100%;
+    max-width: 425px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centralizando o conteúdo */
+}
+
+.pokedex {
+    width: 100%; /* Largura total */
+    max-width: 425px; /* Largura máxima */
+}
+
+.pokemon__image {
+    position: absolute;
+    left: 50%; /* Posicionando a imagem do Pokémon no centro horizontal */
+    bottom: 53%; /* Posicionando a imagem do Pokémon mais abaixo */
+    transform: translate(-63%, 20%); /* Ajustando a imagem para alinhar corretamente */
+    height: 18%; /* Definindo a altura da imagem */
+    z-index: 2; /* Colocando a imagem em cima de outros elementos */
+}
+
+.pokemon__data {
+    position: absolute;
+    font-weight: 600; /* Tornando o texto mais pesado */
+    color: #3a444d; /* Cor do texto */
+    top: 56.5%; /* Definindo a posição vertical */
+    right: 27%; /* Definindo a posição horizontal */
+    font-size: clamp(8px, 5vw, 25px); /* Font-size responsivo */
+}
+
+.pokemon__name {
+    color: #3a444d; /* Cor do nome do Pokémon */
+    text-transform: capitalize; /* Tornando o nome com a primeira letra maiúscula */
+}
+
+.form {
+    position: absolute;
+    width: 65%; /* Largura do formulário */
+    top: 65%; /* Posição vertical */
+    left: 13.5%; /* Posição horizontal */
+}
+
+.input__search {
+    width: 100%; /* Largura total */
+    padding: 4%; /* Preenchimento interno */
+    outline: none; /* Removendo a borda do foco */
+    color: white; /* Cor do texto */
+    background-color: #444; /* Cor de fundo do campo */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: clamp(8px, 5vw, 1rem); /* Font-size responsivo */
+    box-shadow: -2px 3px 0 #222, -4px 5px #000; /* Sombra para criar um efeito de profundidade */
+}
+
+.counters {
+    position: absolute;
+    width: 65%;
+    bottom: 16.2%; /* Posição vertical */
+    left: 13.5%; /* Posição horizontal */
+    padding: 2%; /* Preenchimento interno */
+    color: white; /* Cor do texto */
+    background-color: #444; /* Cor de fundo */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: clamp(8px, 5vw, 1rem); /* Font-size responsivo */
+    box-shadow: -2px 3px 0 #222, -4px 5px #000; /* Sombra para criar um efeito de profundidade */
+    display: flex;
+    justify-content: center; /* Centralizando o conteúdo */
+    gap: 5px; /* Espaço entre os itens */
+    overflow-x: auto; /* Permitindo rolagem horizontal se necessário */
+    min-height: 45px; /* Altura mínima */
+}
+
+.buttons {
+    position: absolute;
+    bottom: 8%; /* Posição vertical */
+    left: 50.5%; /* Posição horizontal */
+    width: 65%; /* Largura dos botões */
+    transform: translate(-57%, 0); /* Ajuste para centralizar os botões */
+    display: flex; /* Usando flexbox */
+    gap: 20px; /* Espaço entre os botões */
+}
+
+.button {
+    width: 50%; /* Largura dos botões */
+    padding: 4%; /* Preenchimento interno */
+    color: white; /* Cor do texto */
+    background-color: #444; /* Cor de fundo */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: clamp(8px, 5vw, 1rem); /* Font-size responsivo */
+    box-shadow: -2px 3px 0 #222, -4px 5px #000; /* Sombra */
+    cursor: pointer; /* Alterando o cursor ao passar sobre o botão */
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222; /* Sombra invertida quando o botão é pressionado */
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte ao pressionar */
+}
+
+.pokemon__type {
+    position: absolute;
+    bottom: 47%; /* Posição vertical */
+    right: 26%; /* Posição horizontal */
+    display: flex; /* Usando flexbox */
+    gap: 1px; /* Espaço entre os tipos */
+    z-index: 10; /* Garantindo que os tipos fiquem acima de outros elementos */
+}
