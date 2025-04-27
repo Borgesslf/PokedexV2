@@ -161,7 +161,7 @@ const renderPokemon = async (pokemon) => {
 
     } else {
         pokemonImage.style.display = 'none';
-        pokemonName.innerHTML = 'Escreve direito fdp'; // Mensagem de erro
+        pokemonName.innerHTML = 'Pokemon ñ encontrado'; // Mensagem de erro
         pokemonNumber.innerHTML = '';
     }
 }
