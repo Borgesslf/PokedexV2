@@ -32,7 +32,7 @@ Este projeto é uma Pokédex interativa que permite a pesquisa de informações 
 2. Navegue até o diretório do projeto:
 
     ```bash
-    cd pokedex
+    cd pokedexv2
     ```
 3. Abra o arquivo `index.html` no seu navegador para visualizar o projeto em ação.
 
