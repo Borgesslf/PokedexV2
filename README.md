@@ -27,7 +27,7 @@ Este projeto é uma Pokédex interativa que permite a pesquisa de informações 
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/Borgesslf/pokedex.git
+    git clone https://github.com/Borgesslf/pokedexv2.git
     ```
 2. Navegue até o diretório do projeto:
 
